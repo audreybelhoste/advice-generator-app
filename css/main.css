@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+body {
+  background-color: #202632; }
+
+.font-manrope, html, body {
+  font-family: 'Manrope', sans-serif; }
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #313a49;
+  border-radius: 25px;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center; }
+  .card__title {
+    color: #53ffa9;
+    font-size: 12px;
+    text-transform: uppercase; }
+  .card__text {
+    color: #cfe2e9;
+    position: relative;
+    margin-bottom: 100px; }
+    .card__text:after {
+      content: url(../img/pattern-divider-mobile.svg);
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%); }
+
+.roll-button {
+  background-color: #53ffa9;
+  padding: 10px;
+  position: absolute;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -45px; }
+
+.dice {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  transition: transform 1s; }
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: -5px 2.5px 2.5px -5px;
+  border-radius: 10px;
+  background-color: #53ffa9;
+  box-shadow: inset 1px 1px #53ffa9; }
+
+.side {
+  position: absolute;
+  background-color: #202632;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #202632;
+  text-align: center;
+  line-height: 2em; }
+
+.side:nth-child(1) {
+  transform: translateZ(1.5em); }
+
+.side:nth-child(6) {
+  transform: rotateY(90deg) translateZ(1.5em); }
+
+.side:nth-child(3) {
+  transform: rotateY(-90deg) translateZ(1.5em); }
+
+.side:nth-child(4) {
+  transform: rotateX(90deg) translateZ(1.5em); }
+
+.side:nth-child(5) {
+  transform: rotateX(-90deg) translateZ(1.5em); }
+
+.side:nth-child(2) {
+  transform: rotateY(-180deg) translateZ(1.5em); }
+
+.two-1, .three-1, .four-1, .five-1, .six-1 {
+  top: 20%;
+  left: 20%; }
+
+.four-3, .five-3, .six-4 {
+  top: 20%;
+  left: 80%; }
+
+.one-1, .three-2, .five-5 {
+  top: 50%;
+  left: 50%; }
+
+.four-2, .five-2, .six-3 {
+  top: 80%;
+  left: 20%; }
+
+.two-2, .three-3, .four-4, .five-4, .six-6 {
+  top: 80%;
+  left: 80%; }
+
+.six-2 {
+  top: 50%;
+  left: 20%; }
+
+.six-5 {
+  top: 50%;
+  left: 80%; }
+
+.show-1 {
+  transform: rotateX(720deg) rotateZ(-720deg); }
+
+.show-6 {
+  transform: rotateX(-900deg) rotateZ(1080deg); }
+
+.show-3 {
+  transform: rotateY(-450deg) rotateZ(-1440deg); }
+
+.show-4 {
+  transform: rotateY(810deg) rotateZ(720deg); }
+
+.show-5 {
+  transform: rotateX(-810deg) rotateZ(-1080deg); }
+
+.show-2 {
+  transform: rotateX(450deg) rotateZ(-720deg); }
+
+/*# sourceMappingURL=main.css.map */

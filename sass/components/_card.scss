@@ -1,0 +1,32 @@
+.card{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $color-dark-lighter;
+	border-radius: 25px;
+	max-width: 400px;
+	padding: 20px;
+	text-align: center;
+
+	&__title{
+		color: $color-primary;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	&__text{
+		color: $color-light;
+		position: relative;
+		margin-bottom: 100px;
+
+		&:after{
+			content: url(../img/pattern-divider-mobile.svg);
+			position: absolute;
+			bottom: -50px;
+			left: 50%;
+			transform: translateX(-50%);
+			
+		}
+	}
+}
