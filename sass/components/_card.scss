@@ -11,9 +11,15 @@
 	text-align: center;
 
 	&__title{
+		position: relative;
 		color: $color-primary;
 		font-size: 12px;
 		text-transform: uppercase;
+
+		.adviceId{
+			transition: all 0.4s ease-in;
+			position: absolute;
+		}
 	}
 
 	&__text{

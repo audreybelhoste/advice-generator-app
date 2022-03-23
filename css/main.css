@@ -298,6 +298,9 @@ template {
 body {
   background-color: #202632; }
 
+* {
+  box-sizing: border-box; }
+
 .font-manrope, html, body {
   font-family: 'Manrope', sans-serif; }
 
@@ -313,9 +316,13 @@ body {
   padding: 20px;
   text-align: center; }
   .card__title {
+    position: relative;
     color: #53ffa9;
     font-size: 12px;
     text-transform: uppercase; }
+    .card__title .adviceId {
+      transition: all 0.4s ease-in;
+      position: absolute; }
   .card__text {
     color: #cfe2e9;
     position: relative;
@@ -332,11 +339,10 @@ body {
 
 .roll-button {
   background-color: #53ffa9;
-  padding: 10px;
   position: absolute;
   border-radius: 100%;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
