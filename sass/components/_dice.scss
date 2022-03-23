@@ -11,6 +11,18 @@
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: -45px;
+
+	&:after{
+		content: url(../img/pattern-divider-mobile.svg);
+		position: absolute;
+		top: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		@include laptop{
+			content: url(../img/pattern-divider-desktop.svg);
+		}
+	}
 }
 
 .dice {

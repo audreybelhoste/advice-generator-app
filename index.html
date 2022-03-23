@@ -3,15 +3,15 @@
     <head>
         <link rel="stylesheet" href="css/main.css">
         <meta charset="utf-8" />
-        <meta name="description" content="Outil de planification de vacances. Trouvez des hébergements et des activités dans la ville de votre choix.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
         <title>Advice Generator</title>
     </head>
 
     <body>
         <div class="card">
-            <h1 class="card__title">Advice #</h1>
-            <p class="card__text">"It is easy to sit up and take notice, what's difficult is getting up and taking action.</p>
+            <h1 class="card__title" >Advice #<span id="adviceId"></span></h1>
+            <p class="card__text" id="advice"></p>
             <div id='roll' class='roll-button'>
                 <div id='dice' class="dice">
                     <div id="dice-side-one" class='side one'>
@@ -50,22 +50,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            const elDice = document.getElementById('dice');
-            const elRoll = document.getElementById('roll');
-
-            elRoll.onclick = function(){rollDice();};
-            
-            function rollDice() {
-            let dice = Math.floor((Math.random() * 6) + 1);
-
-                for (let i = 1; i <= 6; i++) {
-                    elDice.classList.remove('show-' + i);
-                    if (dice === i) {
-                    elDice.classList.add('show-' + i);
-                    }
-                }
-            }
-        </script>
+        <script src="js/dice.js"></script>
+        <script src="js/advice.js"></script>
     </body>
 </html>
